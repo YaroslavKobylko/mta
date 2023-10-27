@@ -1,0 +1,143 @@
+.StatisticsPage{
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.statistics-container {
+    font-family: Arial, sans-serif;
+    max-width: 436px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .search-container label {
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    display: flex;
+    padding: 0px;
+  }
+  
+  .search-button-container{
+    margin: 10px 0 0 0;
+  }
+
+  .box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(58, 165, 253);
+    overflow: hidden;
+  }
+  
+  .box:before {
+    content: "R";
+    position: absolute;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+  }
+  
+  .box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'E';
+  }
+  
+  .box:nth-child(3)::before {
+    content: 'S';
+  }
+  
+  .box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'U';
+  }
+  
+  .box:nth-child(5)::before {
+    content: 'L';
+  }
+
+  .box:nth-child(6)::before {
+    content: 'T';
+    transform: translateY(-100%);
+  }
+  
+  .search-button:hover .box:before {
+    transform: translateY(0);
+  }
+  
+  .search-results {
+    list-style: none;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  
+
+  .search-results li {
+    margin: 5px auto;
+    max-width: 436px;
+    white-space: pre-line;
+    overflow: hidden;
+}
+  
+  .calculate-container {
+    margin-top: 20px;
+  }
+  
+  .calculate-button-green {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .calculate-button-red {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .results-container {
+    margin-top: 10px;
+  }
+  
+  .results-container p {
+    margin: 5px 0;
+    max-width: 436px;
+    white-space: pre-line;
+    overflow: hidden;
+  }

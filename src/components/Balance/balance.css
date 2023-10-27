@@ -1,0 +1,26 @@
+.balance-container {
+    font-family: 'Arial', sans-serif; /* Замініть на шрифт за вашим вибором */
+    font-size: 22px; /* Розмір шрифту */
+    color: #333;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Додайте класи для визначення статусів балансу, наприклад, .zero, .negative, .positive */
+  .zero {
+    color: orange;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  .positive {
+    color: green;
+  }
+
+  .balance-amount {
+    font-size: 48px; /* Розмір шрифту для балансу */
+    margin-top: 10px; /* Відстань від тексту статусу */
+  }
+  

@@ -1,0 +1,49 @@
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .transaction-wrapper {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 325px;
+  }
+  
+  .red {
+    background: red;
+  }
+  
+  .green {
+    background: green;
+  }
+  
+  .transaction-date {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .value {
+    flex-grow: 2;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .comment {
+    flex-grow: 3;
+    text-align: left;
+    max-width: 180px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word; /* Додайте цю властивість для переносу тексту в новий рядок */
+}
+  
+  hr {
+    display: none;
+  }
